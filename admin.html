@@ -3,11 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <script>
-  // Fuerza HTTPS: si por algún motivo el navegador carga la página por
-  // http:// (por ejemplo con un dominio propio mal configurado), la
-  // redirige de inmediato a https://. En Netlify (*.netlify.app) el
-  // certificado SSL y la redirección ya son automáticos, esto es una
-  // capa extra de seguridad por si se usa un dominio personalizado.
+ 
   if(location.protocol === 'http:' && location.hostname !== 'localhost'){
     location.replace('https://' + location.hostname + location.pathname + location.search + location.hash);
   }
