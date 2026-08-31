@@ -1,0 +1,6 @@
+# Configuración de Netlify.
+# Si ya tenías un netlify.toml propio, solo agrégale este bloque
+# [functions] (no hace falta reemplazar todo el archivo).
+
+[functions]
+  directory = "netlify/functions"
